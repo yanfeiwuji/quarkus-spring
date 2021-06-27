@@ -7,7 +7,7 @@ COPY gradle.properties /usr/src/app
 USER root
 RUN chown -R quarkus /usr/src/app
 USER quarkus
-RUN gradle -b /usr/src/app/build.gradle clean buildNative
+RUN gradle -b /usr/src/app/build.gradle.kts clean buildNative
 
 
 ## Stage 2 : create the docker final image
