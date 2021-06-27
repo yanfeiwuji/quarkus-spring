@@ -9,6 +9,7 @@ RUN chown -R quarkus /usr/src/app
 USER quarkus
 RUN gradle -b /usr/src/app/build.gradle clean buildNative
 
+
 ## Stage 2 : create the docker final image
 FROM registry.access.redhat.com/ubi8/ubi-minimal
 WORKDIR /work/
