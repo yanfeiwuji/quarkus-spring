@@ -14,6 +14,8 @@
 # docker run -i --rm -p 8080:8080 quarkus/quarkus-spring
 #
 ###
+
+
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3
 WORKDIR /work/
 RUN chown 1001 /work \
