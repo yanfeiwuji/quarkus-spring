@@ -1,8 +1,8 @@
 ## Stage 1 : build with maven builder image with native capabilities
 FROM quay.io/quarkus/centos-quarkus-maven:21.0.0-java11 AS build
 COPY src /usr/src/app/src
-COPY build.gradle /usr/src/app
-COPY settings.gradle /usr/src/app
+COPY build.gradle.kts /usr/src/app
+COPY settings.gradle.kts /usr/src/app
 COPY gradle.properties /usr/src/app
 USER root
 RUN chown -R quarkus /usr/src/app
